@@ -242,9 +242,8 @@ class _ResultsPageWidgetState extends State<ResultsPageWidget> {
                                                 CrossAxisAlignment.start,
                                             children: [
                                               Text(
-                                                getJsonField(
-                                                        resultsPageGetResultsResponse,
-                                                        r'''$.original_title''')
+                                                getJsonField(topResultsItem,
+                                                        r'''$.original_path''')
                                                     .toString(),
                                                 style: FlutterFlowTheme.title3
                                                     .override(
